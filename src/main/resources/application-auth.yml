@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/auth_db
+    username: auth_admin
+    password: auth_admin_password
+
+server:
+  ssl:
+    key-store: keystore.jks
+    key-store-password: Qaf1Kaf!Jx@
