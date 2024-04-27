@@ -17,7 +17,6 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.util.List;
 
-import static java.util.Objects.requireNonNull;
 
 @RestController
 @RequestMapping("/products")
@@ -33,8 +32,6 @@ public class ProductController {
     }
 
     @GetMapping
-    // TODO: 25.03.2024  create models
-
     public List<Product> getActiveProducts() {
         return this.productService.getActiveProducts();
     }
